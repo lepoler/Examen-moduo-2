@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bgfood_9"
+    android:weightSum="5"
+    tools:context=".MainActivity"
+    >
+
+
+
+
+    <TextView
+
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="80dp"
+
+        />
+
+    <TextView
+        android:id="@+id/subTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitulo"
+        android:textStyle="normal"
+        android:textSize="17sp"
+        android:layout_marginStart="80dp"
+        android:layout_weight="0.8"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mail"
+            android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/mensaje"
+            android:layout_weight="0.1"
+            />
+
+         <ImageView
+             android:id="@+id/mensaje"
+             android:layout_width="49dp"
+             android:layout_height="32dp"
+             android:src="@drawable/email_9"
+             android:layout_marginStart="60dp"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/contrasenya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/lock"
+            android:layout_weight="0.1"
+            android:hint="@string/pasword"
+
+            />
+
+        <ImageView
+            android:id="@+id/lock"
+            android:layout_width="49dp"
+            android:layout_height="32dp"
+            android:src="@drawable/lock_9"
+            android:layout_marginStart="60dp"
+            />
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:hint="@string/Forgot"
+            android:textColorHint="@color/green"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="@string/Login"
+            android:backgroundTint="@color/green"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_marginStart="80dp"
+
+            />
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_toEndOf="@id/login"
+            android:backgroundTint="@color/white"
+            android:text="@string/SignUp"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+        <Button
+            android:id="@+id/facebook"
+            android:layout_width="260dp"
+            android:layout_height="43dp"
+            android:layout_toEndOf="@id/face"
+            android:layout_weight="0.2"
+            android:backgroundTint="@color/white"
+            android:text="@string/face"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/face"
+            android:layout_width="49dp"
+            android:layout_height="32dp"
+            android:src="@drawable/face_9"
+            android:layout_marginStart="60dp"
+
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

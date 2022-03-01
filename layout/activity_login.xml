@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgfood_9"
+    android:weightSum="5"
+    tools:context=".Login">
+
+    <fragment
+        android:id="@+id/fragm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="es.ua.eps.examenmodulo2.Menu"
+        />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="80dp"
+
+        />
+
+    <TextView
+        android:id="@+id/subTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenido"
+        android:textStyle="normal"
+        android:textSize="17sp"
+        android:layout_marginStart="80dp"
+        android:layout_weight="0.8"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pizza"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/pizzaImagen"
+
+            />
+
+        <ImageView
+            android:id="@+id/pizzaImagen"
+            android:layout_width="168dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/pizza_9"
+            />
+
+        <Button
+            android:id="@+id/pedir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/pizzaImagen"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="@color/green"
+            android:text="@string/pedir"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/burger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/burger"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/burger"
+
+            />
+
+        <ImageView
+            android:id="@+id/burger"
+            android:layout_width="168dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/burger_9" />
+
+        <Button
+            android:id="@+id/pedir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/burger"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="@color/green"
+            android:text="@string/pedir"
+
+            />
+
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>
